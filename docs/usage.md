@@ -1,4 +1,4 @@
-## Usage with Angular 1.5 components
+## Usage
 
 ### Getting started
 Although most resources available online are for usage with React, Redux is a framework-agnostic state mangement container. The package was made with the intention of leveling the playing field and making it easy to refer to React Redux resources when building a Redux application with Angular ^1.5.3.
