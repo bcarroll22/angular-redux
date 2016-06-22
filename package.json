@@ -1,6 +1,6 @@
 {
   "name": "ng-component-redux",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "React-Redux style bindings for Angular 1.5 components",
   "main": "lib/index.js",
   "scripts": {
