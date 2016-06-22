@@ -1,12 +1,12 @@
 {
   "name": "ng-component-redux",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "React-Redux style bindings for Angular 1.5 components",
   "main": "lib/index.js",
   "scripts": {
     "build:lib": "babel src --out-dir lib",
-    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/angular-redux.js",
-    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/angular-redux.min.js",
+    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/ng-component-redux.js",
+    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/ng-component-redux.min.js",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "lint": "eslint src test",
     "prepublish": "rm -rf ./dist/* && npm run build",
