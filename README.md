@@ -1,7 +1,7 @@
 Angular Redux
 =========================
 
-[![build status](https://img.shields.io/travis/bcarroll22/ng-component-redux/master.svg?style=flat-square)](https://travis-ci.org/bcarroll22/ng-component-redux)
+[![Build Status](https://travis-ci.org/bcarroll22/ng-component-redux.svg?branch=master)](https://travis-ci.org/bcarroll22/ng-component-redux)[![npm version](https://img.shields.io/npm/v/ng-component-redux.svg?style=flat-square)]
 
 Angular component bindings for [Redux](https://github.com/reactjs/redux).
 Inspired by [ng-redux](https://github.com/angular-redux/ng-redux) and [react-redux](https://github.com/reactjs/react-redux). A great way to manage application state in component-based applications.
