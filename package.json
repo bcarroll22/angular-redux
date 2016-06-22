@@ -17,6 +17,11 @@
     "type": "git",
     "url": "https://github.com/bcarroll22/ng-component-redux.git"
   },
+  "files": [
+    "dist",
+    "lib",
+    "src"
+  ],
   "author": "Brandon Carroll",
   "license": "MIT",
   "dependencies": {
