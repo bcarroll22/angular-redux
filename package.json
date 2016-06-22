@@ -1,6 +1,6 @@
 {
-  "name": "angular-redux",
-  "version": "1.0.0",
+  "name": "ng-component-redux",
+  "version": "1.0.0-beta.1",
   "description": "React-Redux style bindings for Angular 1.5 components",
   "main": "lib/index.js",
   "scripts": {
@@ -8,11 +8,14 @@
     "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/angular-redux.js",
     "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/angular-redux.min.js",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
-    "clean": "rimraf lib dist coverage",
     "lint": "eslint src test",
-    "prepublish": "npm run clean && npm run build",
+    "prepublish": "rm -rf ./dist/* && npm run build",
     "test": "./node_modules/mocha/bin/_mocha --compilers js:babel-core/register ./test/mocha.index",
     "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcarroll22/ng-component-redux.git"
   },
   "author": "Brandon Carroll",
   "license": "MIT",
