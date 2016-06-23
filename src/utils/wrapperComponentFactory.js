@@ -13,14 +13,14 @@ const createWrapperComponent = ({
   bindings,
 
   // Define the new controller that communicates with the store
-  controller: class ConnectWrapper {
+  controller: class ConnectComponentController {
     /**
      * Run the logic that fires when this component initializes and has access to the store.
      */
     $onInit () {
       invariant(this.store,
-        `Could not find "store" in either the context or props of "${wrappedComponentName}". ` +
-        `Wrap the root component in a <provider>, or pass "store" as a prop to "${wrappedComponentName}.`
+        `"Store" is not available in "${wrappedComponentName}". Wrap your application's root ` +
+        `component in a <provider>, or pass "store" as a binding to "${wrappedComponentName}.`
       )
 
       this.tryStateSubscribe()
