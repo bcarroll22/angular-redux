@@ -23,7 +23,6 @@ npm i -S ng-component-redux
 The preferred method of using this package is with a build system such as Browserify or Webpack and npm. If, however, you don't yet use a modern build system or npm, you can include the pre-built UMD module which can be found in the dist directory, and access it via the global `AngularRedux` object. This is not a recommended approach since many complementary redux packages are only available via npm.
 
 ## Todo
-- [ ] Examples
 - [ ] API documentation (In the meantime, take a look at [react-redux documentation](https://github.com/reactjs/react-redux/tree/master/docs))
 
 ## License
