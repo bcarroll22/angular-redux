@@ -1,7 +1,7 @@
 ## API
 
 ### `<provider store>`
-The provider component is registered internally by ng-component-redux. It accepts one binding, and that is the Redux store ([docs for Redux createStore()](http://redux.js.org/docs/api/createStore.html)). Currently, this package does not support passing the store to each connected component, but it is planned for the 1.0.0 release.
+The provider component is registered internally by ng-component-redux. It accepts one binding, and that is the Redux store ([docs for Redux createStore()](http://redux.js.org/docs/api/createStore.html)).
 
 #### Bindings
 * `store` (*[Redux Store](http://redux.js.org/docs/api/Store.html)*): Your application's Redux store.
