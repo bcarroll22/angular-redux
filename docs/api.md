@@ -235,7 +235,7 @@ In all of these examples, the mapped `state` and `dispatch` are available on the
 ### `injector([ngDependency])`
 
 #### Arguments
-* [`ngDependency: mixed`] \(String): Gets a dependency out of Angular's DI container. This is useful in places such as middlewares, where you may need to react to some sort of Angular event such as a UI Router state change, perhaps.
+* [`ngDependency: mixed`] \(*String*): Gets a dependency out of Angular's DI container. This is useful in places such as middlewares, where you may need to react to some sort of Angular event such as a UI Router state change, perhaps.
 
 This function is not limited to use inside of this application, but it is not considered best practice to get Angular dependencies this way, so use the helper sparingly, if ever, outside of middleware. Reducers should always remain pure, and without side effects, so do not use this helper inside of a reducer.
 
@@ -256,3 +256,21 @@ export default function exampleMiddleware () {
   }
 }
 ```
+
+** This helper won't work if you attempt to use it outside of the returned function. That means...
+
+```js
+import { injector } from 'ng-component-redux'
+
+export default function exampleMiddleware () {
+  const $state = injector('$state')
+
+  return store => next => action => {
+    // ... Do whatever you need to do with your ng dependency ...
+
+    return next(action)
+  }
+}
+```
+
+...will throw an error. The injection **must** happen inside the returned function.
