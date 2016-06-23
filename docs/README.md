@@ -4,3 +4,4 @@
 - [API](api.md#api)
   - [`<provider store>`](api.md#provider-store)
   - [`connect([mapStateToProps], [mapDispatchToProps])`](api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options)
+  - [`injector([ngDependency])`](api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options)
