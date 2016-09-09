@@ -7,7 +7,7 @@ To get started, run the following command in your project's directory:
 ```
 npm i -S redux ng-component-redux
 ```
-If for some reason you cannot use npm, you may use the [pre-built UMD module](https://npmcdn.com/ng-component-redux@1.0.0-beta.3/dist/ng-component-redux.js), although this is not recommended for any more than experimentation.
+If for some reason you cannot use npm, you may use the [pre-built UMD module](https://unpkg.com/ng-component-redux@1.0.0-beta.3/dist/ng-component-redux.js), although this is not recommended for any more than experimentation.
 
 ### Presentational and container components
 Much like react-redux, this package embraces the idea of smart components that connect to the Redux store, and dumb components that receive their actions and state as bindings (props in React). Dan Abramov, the creator of Redux, does a great job of explaining this concept [here](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0). In a well-written application, most of your components should be display components, and often times they can be reusable. Any component that needs to be connected to the Redux store can be passed to the `connect()` function exposed by this package.
